@@ -65,7 +65,7 @@ const LoginPage = () => {
       password,
       role: 'user',
       filepath: 'somefile.txt',
-      remark: 'Approval Pending',
+      remark: 'Approval pending',
       isApproved: 'Pending',
     });
     localStorage.setItem('users', JSON.stringify(users));
