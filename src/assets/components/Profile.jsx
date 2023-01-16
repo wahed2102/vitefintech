@@ -92,18 +92,7 @@ const Profile = () => {
                 disabled
               />
             </div>
-            <div className="form-row">
-              <label htmlFor="file" className="form-label">
-                Filepath
-              </label>
-              <input
-                type="file"
-                name="filepath"
-                id="filepath"
-                onChange={handleChange}
-                // value={values.filepath}
-              />
-            </div>
+
             <div className="form-row">
               <label htmlFor="status" className="form-label">
                 Status
@@ -118,9 +107,23 @@ const Profile = () => {
                 disabled
               />
             </div>
-            <button type="submit" className="btn btn-block">
-              Upload File
-            </button>
+            <div className="form-row">
+              <label htmlFor="file" className="form-label">
+                Filepath
+              </label>
+              <input
+                type="file"
+                name="filepath"
+                id="filepath"
+                onChange={handleChange}
+                // value={values.filepath}
+              />
+            </div>
+            <div className="form-row" style={{ alignSelf: 'end' }}>
+              <button type="submit" className="btn btn-block">
+                Upload File
+              </button>
+            </div>
           </div>
         </form>
       </section>
